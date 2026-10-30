@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roleta de Transtornos Alimentares</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card game-card">
+        <div class="header">
+          <span class="badge">Roleta</span>
+          <h1>Roleta de Perguntas</h1>
+        </div>
+
+        <div class="roulette-wrap">
+          <div class="pointer" aria-hidden="true"></div>
+          <div class="roulette" id="roulette">
+            <canvas id="wheelCanvas" width="420" height="420"></canvas>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="spinBtn" type="button">Girar roleta</button>
+        </div>
+
+        <div class="result-box">
+          <p class="label">Pergunta sorteada</p>
+          <h2 id="currentQuestion">Aguardando sorteio...</h2>
+        </div>
+      </section>
+
+      <aside class="card sidebar">
+        <h3>Rodadas</h3>
+        <p class="round-count"><span id="roundNumber">0</span> rodada(s)</p>
+
+        <div class="history-box">
+          <h4>Histórico</h4>
+          <ul id="historyList"></ul>
+        </div>
+
+        <div class="pool-box">
+          <h4>Perguntas ativas</h4>
+          <ul id="questionsList"></ul>
+        </div>
+
+        <div class="sidebar-actions">
+          <button id="resetBtn" type="button" class="secondary">Resetar</button>
+          <a href="hub.html" class="secondary-link">Hub secreto</a>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
