@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hub Secreto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="hub-shell">
+      <section class="card hub-card">
+        <div class="hub-header">
+          <span class="badge">Acesso restrito</span>
+          <h1>Hub de perguntas e respostas</h1>
+        </div>
+
+        <form id="accessForm" class="access-form">
+          <label for="passwordInput">Senha</label>
+          <div class="password-row">
+            <input id="passwordInput" type="password" placeholder="Digite a senha" />
+            <button type="submit">Entrar</button>
+          </div>
+        </form>
+
+        <div id="hubContent" class="hidden">
+          <div class="hub-tools">
+            <a href="roleta.html" class="back-link">Voltar para a roleta</a>
+          </div>
+
+          <div id="qaList" class="qa-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="hub.js"></script>
+  </body>
+</html>
