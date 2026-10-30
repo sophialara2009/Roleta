@@ -261,6 +261,7 @@ button:disabled {
 .hub-page {
   display: block;
   padding: 18px;
+  touch-action: pan-y;
 }
 
 .hub-header {
